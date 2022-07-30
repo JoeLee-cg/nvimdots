@@ -1,10 +1,20 @@
 local completion = {}
 local conf = require("modules.completion.config")
 
-completion["neovim/nvim-lspconfig"] = {
-	opt = true,
-	event = "BufReadPre",
-	config = conf.nvim_lsp,
+-- completion["neovim/nvim-lspconfig"] = {
+-- 	opt = true,
+-- 	event = "BufReadPre",
+-- 	config = conf.nvim_lsp,
+-- }
+completion["neoclide/coc.nvim"] = {
+    opt = true,
+    event = "BufRead",
+    branch = "release",
+    config = function()
+        vim.api.nvim_exec(
+            [[source ~/.config/nvim/lua/modules/completion/coc_config.vim]],
+            false)
+    end
 }
 completion["creativenull/efmls-configs-nvim"] = {
 	opt = false,

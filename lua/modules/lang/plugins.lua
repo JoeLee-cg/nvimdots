@@ -8,12 +8,12 @@ lang["fatih/vim-go"] = {
 	config = conf.lang_go,
 }
 lang["rust-lang/rust.vim"] = { opt = true, ft = "rust" }
-lang["simrat39/rust-tools.nvim"] = {
-	opt = true,
-	ft = "rust",
-	config = conf.rust_tools,
-	requires = { { "nvim-lua/plenary.nvim", opt = false } },
-}
+-- lang["simrat39/rust-tools.nvim"] = {
+-- 	opt = true,
+-- 	ft = "rust",
+-- 	config = conf.rust_tools,
+-- 	requires = { { "nvim-lua/plenary.nvim", opt = false } },
+-- }
 -- lang["kristijanhusak/orgmode.nvim"] = {
 --     opt = true,
 --     ft = "org",
