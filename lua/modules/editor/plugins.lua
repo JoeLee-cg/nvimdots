@@ -29,6 +29,13 @@ editor["terrortylor/nvim-comment"] = {
 		})
 	end,
 }
+editor["aspeddro/gitui.nvim"] = {
+	opt = false,
+}
+editor["nvim-telescope/telescope.nvim"] = {
+	tag = "0.1.0",
+	requires = { { "nvim-lua/plenary.nvim" } },
+}
 editor["nvim-treesitter/nvim-treesitter"] = {
 	opt = true,
 	run = ":TSUpdate",
